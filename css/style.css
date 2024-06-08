@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -12,44 +16,18 @@ body {
     background-repeat: no-repeat;
 }
 
-/* navbar */
+/* nav */
 
-.navbar {
-    background-color: white;
-    padding: 20px;
-    text-align: right;
-}
-
-.navbar img {
+.navbar-brand img {
     width: 60px;
-    display: inline;
-    position: absolute;
-    top: 0.7%;
-    left: 1%;
 }
 
-.navlist {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: inline;
+.nav-link:hover {
+    color: #ff0000 !important;
 }
 
-.navlist li {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: larger;
-    margin-right: 20px;
-}
-
-.navlist li a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-}
-
-.navlist li a:hover {
-    color: #ff0000;
+.nav-item {
+    font-weight: bold;
 }
 
 /* indexlogo */
@@ -68,17 +46,6 @@ body {
 }
 
 /* footer */
-
-.footer1 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    width: 100%;
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
 .socialmedia {
     display: inline;
@@ -148,11 +115,12 @@ body {
     transform: scale(1.5);
 }
 
+
 /* estudio-image and map */
 
 .main0 {
-    display: inline;
-    grid-template-columns: repeat(auto-fill, minmax(650, 1r));
+    display: flex;
+    flex-wrap: wrap;    
     gap: 10px;
     position: absolute;
     top: 50%;
@@ -181,8 +149,8 @@ body {
 /* sobre mi */
 
 .aboutme {
-    display: block;
-    grid-template-columns: repeat(auto-fill, minmax(650, 1r));
+    display: flex;
+    flex-wrap: wrap;    
     gap: 10px;
     position: absolute;
     top: 50%;
@@ -260,4 +228,15 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: gray;
+}
+
+.footer1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
