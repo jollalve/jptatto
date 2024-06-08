@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -8,12 +10,10 @@ body {
     font-weight: normal;
     font-style: normal;
     height: 100vh;
-    margin: 0;
-    padding: 0;
     background-image: url('../images/fondo.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
 
 /* nav */
@@ -90,7 +90,29 @@ body {
 
 /* images-galeria */
 
-.gallery {
+.container {
+    padding: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 2rem;
+    text-align: center;
+    color: #fff !important;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.image:hover img {
+    transform: scale(1.5);
+} 
+
+/* .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
     gap: 10px;
@@ -113,7 +135,7 @@ body {
 
 .image:hover img {
     transform: scale(1.5);
-}
+} */
 
 
 /* estudio-image and map */
@@ -128,18 +150,9 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.main1 {
-    overflow: hidden;
-    display: inline;
-}
-
 .main1 img {
     height: 350px;
     transition: transform 0.3s ease;
-}
-
-.main2 {
-    display: inline;
 }
 
 .main1 img:hover {
@@ -231,10 +244,8 @@ button[type="submit"]:hover {
 }
 
 .footer1 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
+    position: fixed;
+    bottom: 0;     
     width: 100%;
     background-color: white;
     padding-top: 20px;
