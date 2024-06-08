@@ -1,0 +1,263 @@
+body {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: white;
+    padding: 20px;
+    text-align: right;
+}
+
+.navbar img {
+    width: 60px;
+    display: inline;
+    position: absolute;
+    top: 0.7%;
+    left: 1%;
+}
+
+.navlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.navlist li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: larger;
+    margin-right: 20px;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.navlist li a:hover {
+    color: #ff0000;
+}
+
+/* indexlogo */
+
+.indexlogo {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 30%;
+    height: auto;
+}
+
+.indexlogo:hover {
+    opacity: 50%;
+}
+
+/* footer */
+
+.footer1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.socialmedia {
+    display: inline;
+    padding: 20px;
+}
+
+.socialmedia li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.igicon {
+    width: 35px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.fbicon {
+    width: 35px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.igicon:hover {
+    opacity: 70%;
+}
+
+.fbicon:hover {
+    opacity: 70%;
+}
+
+.copyright {
+    vertical-align: middle;
+    font-size: auto;
+    margin-right: 20px;
+    display: inline;
+    position: absolute;
+    right: 0;
+}
+
+/* images-galeria */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.5);
+}
+
+/* estudio-image and map */
+
+.main0 {
+    display: inline;
+    grid-template-columns: repeat(auto-fill, minmax(650, 1r));
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main1 {
+    overflow: hidden;
+    display: inline;
+}
+
+.main1 img {
+    height: 350px;
+    transition: transform 0.3s ease;
+}
+
+.main2 {
+    display: inline;
+}
+
+.main1 img:hover {
+    transform: scale(1.1);
+}
+
+/* sobre mi */
+
+.aboutme {
+    display: block;
+    grid-template-columns: repeat(auto-fill, minmax(650, 1r));
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profilepic {
+    display: inline-block;
+    max-width: 25%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 50%;
+    border-style: dashed;
+    border-color: white;
+}
+
+.nombre1 {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+    color: white;
+}
+
+.info1 {
+    position: relative;
+    top: -200px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 31%;
+    color: white;
+}
+
+/*  formulario de contacto */
+
+.formulario1 {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.campos {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: gray;
+}
